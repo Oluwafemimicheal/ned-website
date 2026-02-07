@@ -5,7 +5,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='p-10 bg-amber-50 flex justify-center'>
+    <footer className='px-5 py-10 lg:p-10 pb-16 bg-amber-50 flex justify-center'>
       <div className='w-full  flex flex-col lg:grid lg:grid-cols-5 lg:gap-2 gap-20 lg:h-80 h-auto'>
 
         {/* left content */}
@@ -20,7 +20,7 @@ const Footer = () => {
 
           <div>
             <h1 className='font-semibold text-[23px] mb-2'>Subscribe to our news</h1>
-            <p className='text-sm'>Stay informed and never miss a beat;
+            <p className='text-sm text-gray-600'>Stay informed and never miss a beat;
               <br /> subscribe to our exclusive news update!
             </p>
             <form className='my-5'>
