@@ -12,6 +12,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  s
   const [isOpen, setIsOpen] = useState(false);
 
   return (

@@ -1,5 +1,6 @@
 
 import './App.css'
+import Chat from './components/ui/Chat'
 import Navbar from './components/ui/Navbar'
 import Client from './pages/Client'
 import Contact from './pages/Contact'
@@ -9,6 +10,9 @@ const App = () => {
 
   return (
     <>
+      <div>
+        <Chat />
+      </div>
       <Navbar/>
       <Client />
       <Contact />

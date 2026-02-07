@@ -3,9 +3,12 @@ import { GiDogHouse } from "react-icons/gi";
 import { IoMdMail, IoIosSend } from "react-icons/io";
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({ id }) => {
   return (
-    <footer className='px-5 py-10 lg:p-10 pb-16 bg-amber-50 flex justify-center'>
+    <footer className='px-5 py-10 lg:p-10 pb-16 bg-amber-50 flex justify-center relative'>
+      <a href={`#${id}`} className='absolute -top-8 flex justify-center items-center bg-gray-100 h-10 w-full'>
+        <h3>Back to Top</h3>
+      </a>
       <div className='w-full  flex flex-col lg:grid lg:grid-cols-5 lg:gap-2 gap-20 lg:h-80 h-auto'>
 
         {/* left content */}
