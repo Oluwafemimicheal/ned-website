@@ -5,13 +5,12 @@
 }
 
 .swiper {
-  height: 400px;
+  height: 350px;
 }
 
 .swiper-slide {
   text-align: left;
   font-size: 18px;
-  background: #7b76c7;
 
   /* Center slide text vertically */
   display: flex;
@@ -37,11 +36,41 @@
   color: black;
 }
 
-.swiper-slide .swiper-button-prev{
-  width: 100%;
+.swiper-button-prev, .swiper-button-next{
   height: 100% ;
+  margin-top: 15% !important;
+  margin-left: 86% !important;
   background-color  : #000;
 }
+
+.swiper-button-next{
+  margin-top: 15% !important;
+}
 .swiper-navigation-icon{
-  display: none;
+  color: rgb(186, 187, 186) !important;
+  width: 10px !important;
+}
+.swiper-pagination-progressbar{
+  background-color: #e6e6e6 !important;
+  margin-top: 35% !important;
+}
+
+.swiper-pagination-progressbar-fill{
+  background-color: rgb(175, 175, 175) !important;
+}
+
+@media(max-width: 600px) {
+  .swiper {
+    height: 260px;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    height: 100% ;
+    margin-top: 15% !important;
+    margin-left: 76% !important;
+    background-color  : #000;
+  }
+  .swiper-pagination-progressbar{
+    background-color: #e6e6e6 !important;
+    margin-top: 33% !important;
+  }
 }
