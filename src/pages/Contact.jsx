@@ -4,7 +4,7 @@ import Form from "@/components/ui/Form";
 
 const Contact = () => {
   return (
-    <div className='px-5 lg:px-10 py-20 grid lg:grid-cols-4 gap-20 '>
+    <div className='px-5   lg:px-10 py-20 grid lg:grid-cols-4 gap-20 '>
 
       {/* left content */}
       <div className='col-span-2 flex flex-col gap-5'>
