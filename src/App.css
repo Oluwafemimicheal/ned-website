@@ -1,0 +1,5 @@
+.footer-links > ul > div > li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+}
