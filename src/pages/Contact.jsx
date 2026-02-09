@@ -15,7 +15,7 @@ const Contact = () => {
             </div>
             <h2 className="font-semibold text-xs"> CONTACT US</h2>
           </div>
-          <h1 className="text-5xl font-semibold">Complete this form to contact our team</h1>
+          <h1 className="text-3xl lg:text-4xl font-semibold">Complete this form to contact our team</h1>
           <small className="font-semibold">FOLLOW US:</small>
           <div className="flex gap-3">
             <span className="bg-gray-200 p-2 rounded-md"><FaTiktok /></span>

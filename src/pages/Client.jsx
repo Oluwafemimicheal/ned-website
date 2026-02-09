@@ -3,8 +3,8 @@ import { FaArrowRight, FaQuoteLeft } from 'react-icons/fa'
 
 const Client = () => {
   return (
-    <div className='px-10 py-20 lg:px-10'>
-      <h1 className='font-semibold text-4xl'>What Our Clients Say</h1>
+    <div className='px-5 py-10 lg:py-20 lg:px-10'>
+      <h1 className='font-semibold text-3xl lg:text-4xl'>What Our Clients Say</h1>
       <div className='flex-col flex lg:flex-row items-start gap-5 mt-10'>
         <div className='flex justify-between w-4xl'>
           <div className='inline-flex'>
