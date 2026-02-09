@@ -56,8 +56,8 @@ const FeaturedProject = () => {
       {/* Property Display */}
       <div className="grid lg:grid-cols-3 gap-5 mt-10">
         <PropertyCard bg={property2} />
-        <PropertyCard bg={property1} />
-        <PropertyCard bg={property3} />
+        <PropertyCard bg={property1} location="Lekki Phase 1" propertyNumber="02" propertyType="3 Bedroom Flat, With inside pool" />
+        <PropertyCard bg={property3} location="Victoria Island" propertyNumber="03" propertyType="4 Bedroom Duplex, Family pool size" />
       </div>
     </div>
   )
