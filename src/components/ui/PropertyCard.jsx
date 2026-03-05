@@ -5,7 +5,7 @@ import property from "../../assets/property1.jpg"
 import { Button } from "./button";
 import { useState } from "react";
 
-const PropertyCard = ({ bg = property, location = "Bluewaters Island", propertyNumber = "01", propertyType = "Modern studio in Bluewaters Bay" }) => {
+const PropertyCard = ({ showAction, bg = property, location = "Bluewaters Island", propertyNumber = "01", propertyType = "Modern studio in Bluewaters Bay" }) => {
 
   const [detail, setDetail] = useState(false)
 
@@ -21,7 +21,7 @@ const PropertyCard = ({ bg = property, location = "Bluewaters Island", propertyN
   return (
     <article className="rounded-2xl h-90 overflow-hidden border relative z-50" style={style} >
       <div className="group h-full  overflow-hidden">
-        <div className="group-hover:transform-[translateY(-1%)] transform-[translateY(-100%)] p-5 transition h-50 w-full bg-white">
+        <div className="group-hover:transform-[translateY(-1%)] transform-[translateY(-100%)] p-5 transition h-50 w-full bg-white/50 backdrop-blur-2xl">
           <div className="h-full flex flex-col justify-between">
             <div className="flex justify-between items-center gap-5 w-full z-10 pb-2 border-b-2 border-gray-200">
               <div className="flex  gap-2 items-center">
@@ -34,11 +34,11 @@ const PropertyCard = ({ bg = property, location = "Bluewaters Island", propertyN
             </div>
             <div className="flex items-start justify-between gap-5 w-full z-10">
               <div>
-                <small><span className="text-gray-500">Developer: </span>Ned Builders</small>
+                <small><span className="text-gray-800">Developer: </span>Ned Builders</small>
                 <h2 className="lg:text-2xl lg:w-60">4-Bedroom Waterfront</h2>
               </div>
               <div>
-                <Button onClick={() => setDetail(true)} size="sm" variant="outline">View Details</Button>
+                <Button onClick={() => showAction(true)} size="sm" variant="outline">View Details</Button>
               </div>
             </div>
           </div>

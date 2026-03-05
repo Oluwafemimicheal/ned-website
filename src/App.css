@@ -33,6 +33,7 @@
 
   border-radius: 50%;
   background-color: white;
+  
   color: black;
 }
 
@@ -76,7 +77,31 @@
 }
 
 
-body{
-  background-repeat: no-repeat;
-  background-size: cover;
+.property .swiper {
+  height: 100%;
+  width: 90%;
+}
+
+.property .swiper-slide {
+  text-align: left;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  align-items: center;
+  margin-left: 8%;
+}
+
+.property .swiper-pagination-progressbar{
+  display: none !important;
+}
+.property .swiper-button-prev, .swiper-button-next{
+  display: none !important;
+}
+
+.hero .swiper{
+  height: 100vh !important;
+}
+.hero .swiper-button-next, .swiper-button-prev{
+  display: none !important;
 }

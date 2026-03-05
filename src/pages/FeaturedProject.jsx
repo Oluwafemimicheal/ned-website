@@ -7,7 +7,7 @@ import property1 from "../assets/property1.jpg"
 import property2 from "../assets/property2.jpg"
 import property3 from "../assets/property3.jpg"
 
-const FeaturedProject = () => {
+const FeaturedProject = ({ show }) => {
   return (
     <div className="px-5 py-10 lg:px-10 lg:py-20">
       {/* Heading */}
@@ -55,9 +55,9 @@ const FeaturedProject = () => {
 
       {/* Property Display */}
       <div className="grid lg:grid-cols-3 gap-5 mt-10">
-        <PropertyCard bg={property2} />
-        <PropertyCard bg={property1} location="Lekki Phase 1" propertyNumber="02" propertyType="3 Bedroom Flat, With inside pool" />
-        <PropertyCard bg={property3} location="Victoria Island" propertyNumber="03" propertyType="4 Bedroom Duplex, Family pool size" />
+        <PropertyCard bg={property2} showAction={show} />
+        <PropertyCard showAction={show} bg={property1} location="Lekki Phase 1" propertyNumber="02" propertyType="3 Bedroom Flat, With inside pool" />
+        <PropertyCard showAction={show} bg={property3} location="Victoria Island" propertyNumber="03" propertyType="4 Bedroom Duplex, Family pool size" />
       </div>
     </div>
   )

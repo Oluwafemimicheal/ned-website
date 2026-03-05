@@ -11,7 +11,6 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 export default function App() {
   return (
